@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Navigation Menu</title>
+  </head>
+  <body class="flex font-sans font-bold text-white bg-[#303030]">
+    <main class="w-1/6 bg-[#2b2b2b] md:w-2/12 text-center pt-5 pb-5">
+      <div class="lg:flex lg:items-center lg:justify-center">
+        <i class="bx bx-menu text-5xl cursor-pointer lg:hidden" id="menu"></i>
+        <i
+          class="bx bx-x text-5xl cursor-pointer hide lg:hidden"
+          id="close"
+        ></i>
+        <i
+          class="bx bxs-user-circle hidden lg:inline-block lg:text-4xl mr-3"
+        ></i>
+
+        <!-- For Bigger Screens -->
+        <p class="hidden font-bold tracking-widest lg:inline-block">
+          My Languages
+        </p>
+      </div>
+      <hr class="mt-2" />
+      <!-- Icon Container -->
+      <div class="flex flex-col items-center justify-center">
+        <!-- Section 1 -->
+        <section
+          class="mt-5 w-fit rounded-full py-2 px-3 text-4xl cursor-pointer duration-150 hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-tailwind-css text-sky-400 hover:after:transition-all hover:after:delay-1000 hover:after:content-['Tailwind'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:mr-3 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">TailwindCSS</p>
+          </div>
+        </section>
+        <!-- Section 2 -->
+        <section
+          class="mt-5 w-fit rounded-full p-3 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div
+            class="flex items-center justify-center lg:flex lg:items-center lg:justify-center"
+          >
+            <i
+              class="bx bxl-javascript text-yellow-400 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['JavaScript'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Javascript</p>
+          </div>
+        </section>
+        <!-- Section 3 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-git text-red-400 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['Git'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Git</p>
+          </div>
+        </section>
+        <!-- Section 4 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-github lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['Github'] hover:after:text-white hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Github</p>
+          </div>
+        </section>
+        <!-- Section 5 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-html5 text-red-600 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['HTML'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">HTML</p>
+          </div>
+        </section>
+        <!-- Section 6 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-react text-sky-500 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['React'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">React</p>
+          </div>
+        </section>
+        <!-- Section 7 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-nodejs text-green-400 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['Nodejs'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Node Js</p>
+          </div>
+        </section>
+        <!-- Section 8 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-mongodb text-green-700 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['MongoDB'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Mongodb</p>
+          </div>
+        </section>
+        <!-- Section 9 -->
+        <section
+          class="mt-5 w-fit rounded-full px-3 py-2 text-4xl cursor-pointer hover:bg-black hover:bg-opacity-40 lg:py-3 lg:rounded-lg lg:w-full lg:text-2xl lg:flex mb-5 lg:items-start relative"
+        >
+          <div class="lg:flex lg:items-center lg:justify-center">
+            <i
+              class="bx bxl-firebase text-orange-400 lg:mr-3 hover:after:transition-all hover:after:delay-1000 hover:after:content-['Firebase'] hover:after:text-lg hover:after:tracking-wide hover:after:absolute hover:after:left-20 hover:after:-top-3 hover:after:shadow-xl hover:after:py-3 hover:after:px-4 lg:hover:after:content-['']"
+              id="icon"
+            ></i>
+            <p class="hidden font-thin tracking-widest lg:flex">Firebase</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div
+      class="text-black shadow-lg h-fit ml-5 mt-4 rounded-lg hide lg:hidden"
+      id="social"
+    >
+      <a
+        href="https://www.linkedin.com/in/tommy-miguel-470b51227/"
+        target="_blank"
+        class="flex items-center px-5 py-4 rounded-t-lg duration-200 cursor-pointer hover:bg-opacity-20 hover:bg-black hover:text-white"
+      >
+        <p class="mr-4">LinkedIn</p>
+        <i class="bx bxl-linkedin-square text-purple-700 text-3xl"></i>
+      </a>
+      <a
+        href="https://twitter.com/TimmykillerSol"
+        target="_blank"
+        class="flex items-center px-5 py-4 duration-200 cursor-pointer hover:bg-opacity-20 hover:bg-black hover:text-white"
+      >
+        <p class="mr-4">Twitter</p>
+        <i class="bx bxl-twitter text-sky-400 text-3xl"></i>
+      </a>
+      <a
+        href="https://github.com/CodingTimmyeth"
+        target="_blank"
+        class="flex items-center px-5 py-4 rounded-b-lg duration-200 cursor-pointer hover:bg-opacity-20 hover:bg-black hover:text-white"
+      >
+        <p class="mr-4">Github</p>
+        <i class="bx bxl-github text-3xl"></i>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
